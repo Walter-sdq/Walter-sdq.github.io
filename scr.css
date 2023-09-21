@@ -1,0 +1,32 @@
+.hidden {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+p:nth-child(2) {
+    transition-delay: 40ms;
+}
+
+.nth-1:nth-child(1) {
+    transition-delay: 20ms;
+}
+
+.nth2:nth-child(2) {
+    transition-delay: 30ms;
+}
+
+.nth3:nth-child(3) {
+    transition-delay: 50ms;
+    transform: translateY(100%);
+}
+
+.nth4:nth-child(4) {
+    transition-delay: 10ms;
+}

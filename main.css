@@ -1,0 +1,466 @@
+@import url(./annimations.css);
+
+@font-face {
+  font-family: 'Space mono';
+  src: url(./Space_Mono/SpaceMono-Bold.ttf) url(Space_Mono/SpaceMono-BoldItalic.ttf) url(Space_Mono/SpaceMono-Italic.ttf)url(Space_Mono/SpaceMono-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Lucinda sans"; */
+  font-family: "Space Mono", "Tahoma", "Blackthorns Demo", "Lucinda sans",
+    sans-serif;
+  color: white;
+  /* transition: all 1s ease-out; */
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  cursor: url(https://www.onyedika.xyz/static/media/arrowPoint.5b3f3b5c07736388f143.svg) 10 10, move !important;
+
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  /* margin: 40px 0px; */
+}
+
+.show h2 span {
+  display: inline-flex;
+  align-items: center;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.line {
+  background-color: #7ff707;
+  width: 40%;
+  height: 2px;
+}
+
+body a,
+button {
+  cursor: url(https://www.onyedika.xyz/static/media/arrowClick.7219a884818048edacbe.svg) 10 10, move !important;
+  color: white;
+  text-decoration: none;
+
+  &&:hover {
+    color: #7ff707;
+  }
+
+  &&:active {
+    color: #7ff707;
+  }
+
+  /* &&:visited{color: #7ff707;} */
+
+}
+
+section,
+body {
+  background-color: black;
+  /* height: 100vh; */
+}
+
+section h1 {
+  color: #7ff707;
+  margin: 2rem;
+}
+
+header {
+  background-color: black;
+  height: 100vh;
+}
+
+.nav,
+.contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.CV {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.nav-bar {
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+  margin: 2rem 4rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #7ff707;
+}
+
+.nav-bar ul li {
+  list-style-type: none !important;
+}
+
+.links {
+  padding: 0px 100px;
+}
+
+link a {
+  text-decoration: none;
+}
+
+.links li {
+  padding: 0px 2rem;
+}
+
+button {
+  background: none !important;
+  width: 120px;
+  height: 50px;
+  border-color: #7ff707 !important;
+}
+
+.logo-color {
+  color: #7ff707;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link {
+  font-weight: 300;
+}
+
+i:hover {
+  color: #7ff707;
+  transition: 1s ease;
+}
+
+.hire {
+  color: white;
+  margin-top: 20px;
+}
+
+button:hover {
+  transform: scale(1);
+}
+
+.hire:hover {
+  color: #7ff707;
+  transition: .5s ease;
+}
+
+.see-cv:hover {
+  color: #7ff707;
+  transition: .5s ease;
+}
+
+.underline {
+  border-bottom: #7ff707 2px solid;
+}
+
+button,
+.logo,
+.link,
+a:hover {
+  cursor: url(https://www.onyedika.xyz/static/media/arrowClick.7219a884818048edacbe.svg) 10 10, move !important;
+
+}
+
+.link:hover {
+  color: #7ff707;
+  transform: skewX(20deg);
+  /* cursor: pointer; */
+
+  transition: 500ms ease-in-out;
+}
+
+.col_ {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.col_ h1 {
+  font-size: 65px;
+}
+
+.me {
+  font-size: 17px;
+}
+
+.rw_ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.about-me .img-div {
+  text-align: center;
+}
+
+.about-me .img-div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 30px;
+
+}
+
+
+
+
+.showcase-card-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: calc(40px - 1%);
+}
+
+.showcase-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: calc(40px);
+}
+
+.showcase-card .card-item {
+  background-color: gray;
+  width: calc(300px - 2%);
+  /* height: auto; */
+  height: 396px;
+  border-radius: 20px;
+}
+
+.showcase-card .card-item img {
+  width: 100%;
+  height: 400px;
+  /* height: 100%; */
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card-item-txt {
+  padding: 20px;
+  display: none;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.service-img svg {
+  color: white;
+}
+
+.service-flex {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.service-cont h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-item h5 {
+  width: 100%;
+}
+
+.service-card {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+
+}
+
+.service-img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.service-img img {
+  width: 100%;
+}
+
+.div-line {
+  width: 100%;
+  height: 2px;
+  background-color: #7ff707;
+}
+
+.service-card-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 344px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px -1px #7ff707;
+  background-color: rgba(128, 128, 128, 0.068);
+
+}
+
+.skill-cont {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.skill-flex-skill {
+  padding-right: 50px;
+}
+
+.softwr {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.appware {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+   */
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px -1px #7ff707;
+  background-color: aliceblue;
+
+}
+
+.appware img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.contact-div {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.contact-div h2 {
+  margin-bottom: 20px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: calc(20px);
+}
+
+.contact-grid input,
+textarea {
+  width: 100%;
+  padding: 20px;
+
+}
+
+.grid-item {
+  background-color: transparent;
+
+}
+
+.contact-name {
+  display: flex;
+  gap: calc(20px);
+}
+
+.circle {
+  background-color: #7ff707;
+  padding: calc(2px - 1%);
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  display: inline-flex;
+}
+
+.contact-grid .contact-name,
+.email,
+.text-area {
+  width: 100%;
+
+}
+
+input,
+textarea {
+  color: #7ff707;
+  background-color: transparent;
+}
+
+.text-area {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+.foot-img img {
+  width: 100%;
+}

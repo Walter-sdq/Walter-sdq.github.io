@@ -1,16 +1,696 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Document</title> -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Walter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <link rel="shortcut icon" href="fav.ico.jpg" type="image/x-icon">
+
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" /> <!-- Replace "styles.css" with your custom CSS file -->
+
+
+    <!-- ///// -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+    <link rel="stylesheet" href="annimations.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="scr.css">
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
+    <meta name="description" content="My Portfolio Website" />
+    <meta name="keywords" content="bootstrap| Portfolio website| html5| css3| mobile first| responsive" />
+    <meta name="author" content="Walter| Akhigbe Wahab|Akhigbe Abdulwahab" />
+    <link rel="stylesheet" href="responsive.css">
+
+
+    <!-- //// -->
+    <!-- ham -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js">
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').click(function () {
+                $('ul').toggleClass('show');
+            });
+
+            $('ul li a').click(function () {
+                $('ul').removeClass('show');
+            });
+        });
+
+    </script>
+    <!-- /// -->
 </head>
 
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+<body id="content">
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-bar">
+
+
+
+                <div class="logo" src="#">Wal<span class="logo-color">ter</span></div>
+
+
+
+                <ul class="links">
+                    <li class="link"><a href="#about">About Me</a></li>
+                    <li class="link underline"><a href="#Portfolio">Portfolio</a></li>
+                    <li class="link"><a href="#Contact">Contact</a></li>
+                </ul>
+
+                <div class="CV"><button title="download cv" class="see-cv"><a target="_blank"
+                            href="https://resume.io/r/fnnYIph6w">See my CV</a></button>
+                    <style>
+                        .see-cv a:hover {
+                            color: #7ff707;
+                        }
+                    </style>
+                    <div class="hamburger">
+                        <div class="ham"></div>
+                        <div class="ham"></div>
+                        <div class="ham"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+        <div class="contain container col_">
+
+            <div class="ban_bontent">
+                <h5><span class="wobble fade-top">👋</span> <span class="fade-bottom">Hi there I'm Walter</span></h5>
+                <h1>A <span class="logo-color">Web</span> Developer</h1>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/AkhigbeWahab" title="twitter"><i
+                        class="fa-brands fa-twitter fa-lg"></i></i></a>
+                <a href="https://facebook.com/wahab.akhigbe.7" title="facebook"><i
+                        class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href="#" title="linkedin"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                <!-- <a href="#" title="instagram"><i class="fa-brands fa-instagram fa-lg"></i></a> -->
+            </div>
+            <button class="hire"><a
+                    href="https://api.whatsapp.com/send?phone=2348074206189&text=Hi%20there%20Walter,%20I%20would%20like%20to%20hire%20you%20for%20a%20website."
+                    target="_blank">Hire Me</a></button>
+        </div>
+    </header>
+
+    <div class="line"></div>
+
+    <section id="about">
+        <div class="contain">
+            <div class="container">
+
+
+                <div class="about-me">
+                    <div class="img-div hidden">
+                        <img src="./IMG_E0889.JPG" alt="Profile Picture">
+                    </div>
+                    <div class="content">
+                        <h2><span class="logo-color">About Me</span>{}</h2>
+                        <p class="p hidden">My name is Akhigbe Abdulwahab (Walter), I am proudly Nigerian. I have always
+                            had interest in
+                            Science, art and tech. i am currently a student of Edobits,where i see my self working
+                            towards the goal of becoming a developer and creative designer.</p>
+                        <p class="p hidden">When i am not working, i like to do some random research to learn something
+                            new, or just
+                            watch a nice movie.</p>
+                    </div>
+                </div>
+
+
+
+                <!-- <h1>About Me</h1>
+                <div class="rw_">
+                    <p class="me">
+                        My name is Akhigbe Abdulwahab (Walter), I am proudly Nigerian. I have always had interest in
+                        Science, art and tech. i am currently a student of Edobits,where i see my self working towards
+                        the
+                        goal of becoming a developer and creative designer. When i am not working, i like to do spme
+                        random
+                        research to learn something new, or just watch a nice movie.
+                    </p>
+                    <div class="img_container">
+                        <img src="./img/Osebo.jfif"
+                            alt="">
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+    <div class="line"></div>
+
+    <section id="Portfolio">
+        <div class="contain">
+            <div class="container ">
+
+
+
+
+                <div class="showcase-card-cont">
+                    <h2><span class="logo-color">Showcase</span>=></h2>
+                    <div class="showcase-card hidden">
+                        <div class="card-item nth-1 hidden">
+                            <div>
+                                <img src="img/huddle.png" alt="Project 1">
+                            </div>
+
+                            <div class="card-item-txt">
+                                <h5>head</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, optio?</p>
+                            </div>
+                        </div>
+                        <div class="card-item nth-2 hidden">
+                            <div>
+                                <img src="img/www.palmpay.com_.png" alt="Project 1" width="100px">
+                            </div>
+
+                            <div class="card-item-txt">
+                                <h5>head</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, optio?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-card hidden">
+                        <div class="card-item nth-3 hidden">
+                            <div>
+                                <img src="img/creative.jpg" alt="Project 1">
+                            </div>
+
+                            <div class="card-item-txt">
+                                <h5>head</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, optio?</p>
+                            </div>
+                        </div>
+                        <div class="card-item nth-4 hidden">
+                            <div>
+                                <img src="img/flyer4.jpg" alt="Project 1">
+                            </div>
+
+                            <div class="card-item-txt">
+                                <h5>head</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, optio?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button"><a style="text-decoration: none; color: #7ff707;"
+                            href="https://media.gcflearnfree.org/content/5967b8a98444e81d1ca6cde4_07_13_2017/funda_intro_elements.jpg"
+                            target="_blank">See more
+                            =></a></button>
+                </div>
+
+
+
+
+                <!-- <style>
+                    .carousel-inner {
+                        height: auto;
+                      width: 500px;
+                    }
+                  </style>
+                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card">
+                          <img src="img/Chimwga.jfif" class="card-img-top" alt="Slide 1">
+                          <div class="card-body">
+                            <h5 class="card-title">Slide 1</h5>
+                            <p class="card-text">Description for Slide 1.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card">
+                          <img src="img/Chimwga.jfif" class="card-img-top" alt="Slide 2">
+                          <div class="card-body">
+                            <h5 class="card-title">Slide 2</h5>
+                            <p class="card-text">Description for Slide 2.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card">
+                          <img src="" class="card-img-top" alt="Slide 3">
+                          <div class="card-body">
+                            <h5 class="card-title">Slide 3</h5>
+                            <p class="card-text">Description for Slide 3.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div> -->
+
+
+                <!-- <div class="portfolio">
+                    <h2>Portfolio</h2>
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="img/Chimwga.jfif" alt="Project 1">
+                            <div class="slide-overlay">
+                                <h3>Project 1</h3>
+                                <p>A brief description of Project 1.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Chimwga.jfif" alt="Project 2">
+                            <div class="slide-overlay">
+                                <h3>Project 2</h3>
+                                <p>A brief description of Project 2.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Chimwga.jfif" alt="Project 3">
+                            <div class="slide-overlay">
+                                <h3>Project 3</h3>
+                                <p>A brief description of Project 3.</p>
+                                <a href="#" class="btn">View Project</a>
+                            </div>
+                        </div>
+                        Add more slides as needed
+                    </div>
+                </div>
+                <style>
+                    .portfolio {
+                        max-width: 800px;
+                        margin: 0 auto;
+                    }
+
+                    .slider {
+                        position: relative;
+                    }
+
+                    .slide {
+                        position: relative;
+                    }
+
+                    .slide img {
+                        width: 100%;
+                    }
+
+                    .slide-overlay {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        padding: 20px;
+                        color: #fff;
+                    }
+
+                    .slide-overlay h3 {
+                        margin-top: 0;
+                    }
+
+                    .slide-overlay p {
+                        margin-bottom: 20px;
+                    }
+
+                    .slide-overlay .btn {
+                        background-color: #fff;
+                        color: #000;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        border-radius: 4px;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    .slide-overlay .btn:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                </style> -->
+
+
+
+
+                <!-- <h1 class="text-center">
+                    Portfolio
+                </h1>
+
+
+
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                Content for the first item
+                            </div>
+                            <div class="grid-item">
+                                Content for the second item
+                            </div>
+                            Add more grid items as needed
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <!-- <div class="grid-container">
+                    <div class="grid-item">
+                      Content for the first item
+                    </div>
+                    <div class="grid-item">
+                      Content for the second item
+                    </div>
+                    Add more grid items as needed
+                  </div>
+                   -->
+
+                <!-- <div class="grid">
+                    <div class="one card ">1</div>
+                    <div class="two card ">2</div>
+                    <div class="three card ">3</div>
+                    <div class="four card ">4</div>
+                    <div class="five card ">5</div>
+                    <div class="five card ">6</div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section id="service">
+        <div class="contain">
+            <div class="container ">
+
+                <div class="service-cont">
+                    <div>
+                        <h2>My servics</h2>
+
+                        <div class="service-card">
+                            <div class="service-flex">
+                                <div class="service-card-item">
+                                    <div class="service-img">
+                                        <img src="/img/web-development-icon.png" alt="">
+                                    </div>
+
+                                    <h5>website design</h5>
+                                    <div class="div-line"></div>
+                                    <div class="service-p">
+                                        specializing in crafting responsive and intuitive websites, combining
+                                        cutting-edge technology with seamless user experiences.
+                                    </div>
+                                </div>
+                                <div class="service-card-item">
+                                    <div class="service-img">
+                                        <img src="/img/pen-tool-vector-design-icon.png" alt="">
+                                    </div>
+                                    <h5>Logo creation</h5>
+                                    <div class="div-line"></div>
+                                    <div class="service-p">
+                                        Through meticulous design, we create visually striking logos that capture the
+                                        essence of your brand, leaving a lasting impression.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service-flex">
+                                <div class="service-card-item">
+                                    <div class="service-img">
+                                        <img src="/img/quality-badge-thumbs-up-icon.png" alt="">
+                                    </div>
+                                    <h5>Brand identity</h5>
+                                    <div class="div-line"></div>
+                                    <div class="service-p">
+                                        With a strategic approach, we develop comprehensive brand identities that
+                                        authentically reflect your values and resonate with your target audience.
+                                    </div>
+                                </div>
+                                <div class="service-card-item">
+                                    <div class="service-img">
+                                        <img src="/img/branding-logo-design-icon.png" alt="">
+                                    </div>
+                                    <h5>Graphics design</h5>
+                                    <div class="div-line"></div>
+                                    <div class="service-p">
+                                        Creative expertise transforms concepts into visually captivating designs,
+                                        effectively communicating your message and enhancing brand experiences.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonial">
+        <div class="contain">
+            <div class="container">
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- //////////////////// -->
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+        style="background: black; display:grid; place-content: center; height: 200px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Ini Dinma-Okojie.jfif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Ini Dinma-Okojie.jfif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/Ini Dinma-Okojie.jfif" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div> -->
+    <!-- /////////////////// -->
+
+    <div class="line"></div>
+    <section id="skill/tool">
+        <div class="contain">
+            <div class="container ">
+
+                <div class="skill-cont">
+                    <div class="skill-flex skill" style="padding-right: 30px;">
+                        <h2><span class="logo-color"> My skill </span>&<span class="logo-color"> tools</span></h2>
+                        <h5>every day is a new challange</h5>
+                        <p>I am a versatile professional skilled in both web development and design. I have expertise in
+                            HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS, which enable me to create visually
+                            appealing and responsive websites. <span class="skilhd"> Additionally, I am proficient in
+                                Adobe Photoshop and
+                                Illustrator for creating captivating graphics. Furthermore, I am also proficient in
+                                Microsoft Office, allowing me to produce polished documents, conduct insightful data
+                                analysis, and deliver impactful presentations.</span></p>
+
+                    </div>
+                    <div class="skill-flex tool">
+                        <div class="softwr">
+                            <!--  -->
+                            <div class="appware"><img src="img/html-icon.svg" alt=""></div>
+                            <div class="appware"><img src="img/css-icon.svg" alt=""></div>
+                            <div class="appware"><img src="img/js-icon.jpg" alt=""></div>
+                            <div class="appware"><img src="img/OIP.jfif" alt=""></div>
+                            <div class="appware"><img src="img/OIP (1).jfif" alt=""></div>
+                            <div class="appware"><img src="img/OIP (2).jfif" alt=""></div>
+                            <div class="appware"><img src="img/ps.jfif" alt=""></div>
+                            <div class="appware"><img src="img/OIP (3).jfif" alt=""></div>
+                            <div class="appware"><img src="img/OIP (4).jfif" alt=""></div>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="line"></div>
+    <div class="contain">
+        <div class="container">
+            <div class="working-together" style="background-color: black;">
+                <div class="type-writer" style="background-color: black;font-size: 20px; text-align: center;display: flex;align-items: center;
+            justify-content: center; margin: 30px 0;">
+                    <h2 class="logo-color">Interested in working </span>together<span>?</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="Contact">
+        <div class="contain">
+            <div class="conainer">
+                <div class="contact-div">
+                    <h2><span class="logo-color">Contact</span> </h2>
+                    <form action="POST" class="contact-grid" name="contact" data-netlify="true">
+                        <div class="contact-name">
+
+                            <div class="grid-item ">
+                                <input type="text" placeholder="First name" required name="name" id="name">
+                            </div>
+
+                            <div class="grid-item "><input type="text" placeholder="Last name" required name="name" id="name">
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="grid-item "> <input type="email" placeholder="Email address" required
+                                    name="email" id="email"></div>
+
+                        </div>
+                        <div class="text-area">
+                            <div class="grid-item "><textarea name="message" placeholder="Type your message here" id="message"
+                                    cols="30" rows="10"></textarea></div>
+
+                        </div>
+
+                        <div class="comferm-submit">
+                            <style>
+                                .comferm-submit {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 40px;
+                                    margin-top: 20px;
+                                }
+
+                                /* .checkbox {
+                                    background: none;
+                                    color: #7ff707;
+                                } */
+                                .custom-checkbox {
+                                    box-sizing: border-box;
+                                    width: 50px;
+                                    height: 50px;
+                                    cursor: url(https://www.onyedika.xyz/static/media/arrowClick.7219a884818048edacbe.svg) 10 10, move !important;
+                                }
+
+                                .custom-checkbox input {
+                                    display: none;
+                                }
+
+                                .custom-checkbox .checkmark {
+                                    width: 100%;
+                                    height: 100%;
+                                    border: 2px solid #7ff707;
+                                    display: inline-block;
+                                    border-radius: 3px;
+                                    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2px/27px/white_check.svg/1200px-white_check.svg.png) center/1200% no-repeat;
+                                }
+
+                                .custom-checkbox input:checked+.checkmark {
+                                    background-size: 60%;
+                                }
+                            </style>
+                            <label for="checkbox" class="custom-checkbox">
+                                <div class="grid-item checkbox"><input type="checkbox"></div>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <button class="grid-item button" type="submit">Send Mail</button>
+                        </div>
+
+
+                        <div class="circle-flex">
+                            <style>
+                                .circle-flex {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-top: 20px;
+                                    gap: 10px;
+                                }
+                            </style>
+                            <div class="grid-item circle"></div>
+                            <div class="grid-item circle"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="line "></div>
+
+    <section id="footer">
+        <div class="contain">
+            <div class="conainer">
+                <div class="footer">
+                    <div style="text-align: center;margin-top: 30px;font-size: small;">
+                        <h5 style="font-size: small;">OR</h5>
+                    </div>
+
+                    <div class="foot-img">
+                        <a target="_blank"
+                            href="https://api.whatsapp.com/send?phone=2348074206189&text=Hi%20there%20Walter,%20Lets%20connect."
+                            style="text-decoration: none;"><i class="fa-brands fa-whatsapp fa-lg"></i></a>
+                        <a target="_blank" href="http://github.com/Walter-sdq"><i
+                                class="fa-regular fab fa-github fa-lg"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <link rel="stylesheet" href="annimations.css">
+
+
+    <!-- <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"><img src="/fav.ico.jpg" alt=""></span></span>
+    </div>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script> -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/2f5efcaaa5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src='main.js'></script>
+    <script defer src="scr.js"></script>
 </body>
 
 </html>
